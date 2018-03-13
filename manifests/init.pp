@@ -3,19 +3,19 @@ class x509 (
   $basedir = '/etc/x509',
   $basedir_owner = 'root',
   $basedir_group = 'root',
-  $basedir_mode = 0755,
+  $basedir_mode = '0755',
   $keysdir = 'keys',
   $keysdir_owner = 'root',
   $keysdir_group = 'ssl-cert',
-  $keysdir_mode = 0710,
+  $keysdir_mode = '0710',
   $certsdir = 'certs',
   $certsdir_owner = 'root',
   $certsdir_group = 'root',
-  $certsdir_mode = 0755,
+  $certsdir_mode = '0755',
   $cadir = 'ca',
   $cadir_owner = 'root',
   $cadir_group = 'root',
-  $cadir_mode = 0755,
+  $cadir_mode = '0755',
 ) {
   validate_re($ensure, ['present','absent'], 'Valid values are: present, absent. WARNING: If set to absent the conf file is removed.')
 
