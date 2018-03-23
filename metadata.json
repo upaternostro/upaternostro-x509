@@ -8,6 +8,6 @@
   "project_page": "https://github.com/upaternostro/upaternostro-x509",
   "issues_url": "https://github.com/upaternostro/upaternostro-x509/issues",
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"}
   ]
 }
