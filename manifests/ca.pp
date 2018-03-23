@@ -4,7 +4,7 @@ define x509::ca (
   $cadir = 'ca',
   $cafile_owner = 'root',
   $cafile_group = 'root',
-  $cafile_mode = 0644,
+  $cafile_mode = '0644',
   $content = file("x509/${fqdn}/ca/${title}.crt"),
 ) {
   include x509

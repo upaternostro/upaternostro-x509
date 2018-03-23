@@ -4,7 +4,7 @@ define x509::key (
   $keysdir = 'keys',
   $keyfile_owner = 'root',
   $keyfile_group = 'ssl-cert',
-  $keyfile_mode = 0640,
+  $keyfile_mode = '0640',
   $content = file("x509/${fqdn}/keys/${title}.key"),
 ) {
   include x509

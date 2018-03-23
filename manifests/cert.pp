@@ -4,7 +4,7 @@ define x509::cert (
   $certsdir = 'certs',
   $certsfile_owner = 'root',
   $certsfile_group = 'root',
-  $certsfile_mode = 0644,
+  $certsfile_mode = '0644',
   $content = file("x509/${fqdn}/certs/${title}.crt"),
 ) {
   include x509
