@@ -27,7 +27,10 @@ class x509 (
       mode   => "${basedir_mode}",
     }
 
-    file { "${basedir}/${keysdir}":
+    group { "${keysdir_group}":
+      ensure => present,
+      system => true,
+    } -> file { "${basedir}/${keysdir}":
       ensure  => directory,
       owner   => "${keysdir_owner}",
       group   => "${keysdir_group}",
